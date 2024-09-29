@@ -15,7 +15,10 @@ terraform {
 }
 
 
-variable "DO_PAT" {}
+variable "DO_PAT" {
+  type    = string
+  default = ""
+}
 
 provider "digitalocean" {
   token = var.DO_PAT
