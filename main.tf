@@ -1,15 +1,15 @@
 terraform {
-       backend "remote" {
-         organization = "AshvinNihalani"
+  backend "remote" {
+    organization = "AshvinNihalani"
 
-         workspaces {
-           name = "personal-infrastructure"
-         }
-       }
-     }
+    workspaces {
+      name = "personal-infrastructure"
+    }
+  }
+}
 
 resource "null_resource" "example" {
-       triggers = {
-         value = "A example resource that does nothing!"
-       }
-   }
+  triggers = {
+    value = "A example resource that does nothing!"
+  }
+}
