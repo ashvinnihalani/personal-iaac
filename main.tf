@@ -15,10 +15,10 @@ terraform {
 }
 
 
-variable "do_token" {}
+variable "DO_PAT" {}
 
 provider "digitalocean" {
-  token = var.do_token
+  token = var.DO_PAT
 }
 
 resource "digitalocean_droplet" "www-1" {
