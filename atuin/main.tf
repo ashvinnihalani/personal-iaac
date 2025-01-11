@@ -43,3 +43,21 @@ resource "digitalocean_database_firewall" "atuin-postgres-fw" {
     value = digitalocean_droplet.atuin-server.id
   }
 }
+
+resource "digitalocean_firewall" "atuin-server" {
+  name = "atuin-server-22-8888"
+
+  droplet_ids = [digitalocean_droplet.atuin-server.id]
+
+  inbound_rule {
+    protocol         = "tcp"
+    port_range       = "22"
+    source_addresses = ["0.0.0.0/0", "::/0"]
+  }
+
+  inbound_rule {
+    protocol         = "tcp"
+    port_range       = "8888"
+    source_addresses = ["0.0.0.0/0", "::/0"]
+  }
+}
