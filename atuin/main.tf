@@ -57,7 +57,7 @@ resource "digitalocean_firewall" "atuin-server" {
 
   inbound_rule {
     protocol         = "tcp"
-    port_range       = "8888"
+    port_range       = "80"
     source_addresses = ["0.0.0.0/0", "::/0"]
   }
 
