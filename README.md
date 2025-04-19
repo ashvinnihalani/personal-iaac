@@ -1,4 +1,6 @@
-# Personal Cloud Resources [![Terraform](https://github.com/ashvinnihalani/personal-iaac/actions/workflows/terraform.yml/badge.svg)](https://github.com/ashvinnihalani/personal-iaac/actions/workflows/terraform.yml)
+# Personal Cloud Resources 
+[![Terraform](https://github.com/ashvinnihalani/personal-iaac/actions/workflows/terraform.yml/badge.svg)](https://github.com/ashvinnihalani/personal-iaac/actions/workflows/terraform.yml)
+
 Personal Repo to Manage Cloud IaaC
 
 ## Stack
